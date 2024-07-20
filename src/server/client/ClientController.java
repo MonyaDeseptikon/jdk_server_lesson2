@@ -1,5 +1,7 @@
 package server.client;
 
+import server.server.ServerController;
+
 /**
  * класс содержащий логику работы клиента
  *
@@ -88,5 +90,9 @@ public class ClientController {
      */
     private void showOnWindow(String text) {
         clientView.showMessage(text);
+    }
+
+    public String getName() {
+        return name;
     }
 }

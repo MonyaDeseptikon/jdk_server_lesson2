@@ -182,7 +182,7 @@ public class ClientGUI extends JFrame implements ClientView{
     protected void processWindowEvent(WindowEvent e) {
         super.processWindowEvent(e);
         if (e.getID() == WindowEvent.WINDOW_CLOSING){
-            this.disconnectedFromServer();
+            this.disconnectFromServer(); //исправил  с disconnectedFromServer а disconnectFromServer
         }
     }
 }
